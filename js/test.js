@@ -10,8 +10,8 @@ describe('тестирование получения тарифа', function ()
 });
 
 
-describe('расчета стоимости заказа = 400тг', function () {
-    it('стоимость заказа без ожидания расстояние меньше 2 км', function () {
+describe('расчета стоимости заказа ', function () {
+    it('стоимость заказа без ожидания расстояние меньше 2 км = 400тг', function () {
         let rate = getRate('city');
         let rateScale = getRateScale();
         assert.equal(culcAmount(rate, rateScale), 400);
